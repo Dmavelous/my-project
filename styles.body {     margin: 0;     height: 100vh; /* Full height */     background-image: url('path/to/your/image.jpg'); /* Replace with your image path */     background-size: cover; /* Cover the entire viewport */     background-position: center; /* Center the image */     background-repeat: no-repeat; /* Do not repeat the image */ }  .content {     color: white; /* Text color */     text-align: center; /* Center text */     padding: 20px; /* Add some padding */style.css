@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.content {
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
