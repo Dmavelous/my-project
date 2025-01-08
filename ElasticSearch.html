@@ -30,7 +30,7 @@
 <body>
    <h1>Elasticsearch SetUP</h1>
     <br>
-    <h3>Step 1:Install Java</h3>
+    <h2>Step 1:Install Java</h2>
     <br>
     <ul>
         <li>sudo apt update</li>
@@ -40,11 +40,11 @@
         <img src="./Elastic Search/second.png" width=200, height=150, alt="">
     </ul>
     <br>
-    <h3>Step 2:Download Elasticsearch/h3>
+    <h2>Step 2:Download Elasticsearch/h2>
     <br>
     Go to the Elasticsearch download page and download the latest version for your operating system.
     <br>
-    <h3>Step 3:Installation of an Elasticsearch<</h3>
+    <h2>Step 3:Installation of an Elasticsearch<</h2>
     <ul>
         <li>wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -</li>
         <br>
@@ -55,13 +55,13 @@
         <li>sudo apt install elasticsearch</li>
     </ul>
     <br>
-    <h3>Step 4:Configure Elasticsearch</h3>
+    <h2>Step 4:Configure Elasticsearch</h2>
         <ul>
             <li>sudo nano /etc/elasticsearch/elasticsearch.yml</li>
             <li></li>
         </ul>
      <br>   
-    <h3>Step 5:Start and Enable Elasticsearch</h3>
+    <h2>Step 5:Start and Enable Elasticsearch</h2>
         <br>
         <ul>
             1.Start the Elasticsearch Service:
@@ -73,11 +73,21 @@
             <li>sudo systemctl status elasticsearch</li>
         </ul>
         <br>
-     <h3>Step 6:Verify Installation</h3>
+     <h2>Step 6:Verify Installation</h2>
         <ul>
             Open a web browser or use curl to check if Elasticsearch is running:
             <li>curl -X GET "localhost:9200/"</li>
     
+        </ul>
+      <h2>Step 7:Install Kibana</h2>
+        <br>
+        <ul>
+            1.Download and Install Kibana:
+            <li>wget https://artifacts.elastic.co/downloads/kibana/kibana-8.5.0-amd64.deb
+                sudo dpkg -i kibana-8.5.0-amd64.deb</li>
+            2.Start and Enable Kibana:
+            <li>sudo systemctl start kibana</li>
+            <li>sudo systemctl enable kibana</li>
         </ul>
 </body>
 </html>
