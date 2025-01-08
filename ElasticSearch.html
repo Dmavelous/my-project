@@ -41,10 +41,11 @@
     </ul>
     <br>
     <h2>Step 2:Download Elasticsearch/h2>
+        <ul>
+            <li>Go to the Elasticsearch download page and download the latest version for your operating system.</li>
+        </ul>
     <br>
-    Go to the Elasticsearch download page and download the latest version for your operating system.
-    <br>
-    <h2>Step 3:Installation of an Elasticsearch<</h2>
+    <h2>Step 3:Installation of an Elasticsearch</h2>
     <ul>
         <li>wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -</li>
         <br>
@@ -63,13 +64,13 @@
      <br>   
     <h2>Step 5:Start and Enable Elasticsearch</h2>
         <ul>
-            1.Start the Elasticsearch Service:
+            <h4>1.Start the Elasticsearch Service:</h4>
             <li>sudo systemctl start elasticsearch</li>
             <br>
-            2.Enable Elasticsearch to Start on Boot:
+            <h4>2.Enable Elasticsearch to Start on Boot:</h4>
            . <li>sudo systemctl enable elasticsearch</li>
             <br>
-            3.Check the Status:To verify that Elasticsearch is running:
+            <h4>3.Check the Status:To verify that Elasticsearch is running:</h4>
             <li>sudo systemctl status elasticsearch</li>
         </ul>
         <br>
@@ -82,15 +83,15 @@
         <br>
       <h2>Step 7:Install Kibana</h2>
         <ul>
-            1.Download and Install Kibana:
+            <h4>1.Download and Install Kibana:</h4>
             <li>wget https://artifacts.elastic.co/downloads/kibana/kibana-8.5.0-amd64.deb
                 sudo dpkg -i kibana-8.5.0-amd64.deb</li>
             <br>
-            2.Start and Enable Kibana:
+            <h4>2.Start and Enable Kibana:</h4>
             <li>sudo systemctl start kibana</li>
             <li>sudo systemctl enable kibana</li>
             <br>
-            3.Access Kibana:
+            <h4>3.Access Kibana:</h4>
              <li>Open your web browser and go to http://localhost:5601.</li> 
         </ul>
         <br>
