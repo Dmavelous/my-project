@@ -62,13 +62,13 @@
         </ul>
      <br>   
     <h2>Step 5:Start and Enable Elasticsearch</h2>
-        <br>
         <ul>
             1.Start the Elasticsearch Service:
             <li>sudo systemctl start elasticsearch</li>
             <br>
             2.Enable Elasticsearch to Start on Boot:
-            <li>sudo systemctl enable elasticsearch</li>
+           . <li>sudo systemctl enable elasticsearch</li>
+            <br>
             3.Check the Status:To verify that Elasticsearch is running:
             <li>sudo systemctl status elasticsearch</li>
         </ul>
@@ -79,16 +79,21 @@
             <li>curl -X GET "localhost:9200/"</li>
     
         </ul>
-      <h2>Step 7:Install Kibana</h2>
         <br>
+      <h2>Step 7:Install Kibana</h2>
         <ul>
             1.Download and Install Kibana:
             <li>wget https://artifacts.elastic.co/downloads/kibana/kibana-8.5.0-amd64.deb
                 sudo dpkg -i kibana-8.5.0-amd64.deb</li>
+            <br>
             2.Start and Enable Kibana:
             <li>sudo systemctl start kibana</li>
             <li>sudo systemctl enable kibana</li>
+            <br>
+            3.Access Kibana:
+             <li>Open your web browser and go to http://localhost:5601.</li> 
         </ul>
+        <br>
 </body>
 </html>
   
