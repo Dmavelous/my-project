@@ -60,7 +60,8 @@
             <li>sudo nano /etc/elasticsearch/elasticsearch.yml</li>
             <li></li>
         </ul>
-    <h3>Start and Enable Elasticsearch</h3>
+     <br>   
+    <h3>Step 5:Start and Enable Elasticsearch</h3>
         <br>
         <ul>
             1.Start the Elasticsearch Service:
@@ -68,6 +69,15 @@
             <br>
             2.Enable Elasticsearch to Start on Boot:
             <li>sudo systemctl enable elasticsearch</li>
+            3.Check the Status:To verify that Elasticsearch is running:
+            <li>sudo systemctl status elasticsearch</li>
+        </ul>
+        <br>
+     <h3>Step 6:Verify Installation</h3>
+        <ul>
+            Open a web browser or use curl to check if Elasticsearch is running:
+            <li>curl -X GET "localhost:9200/"</li>
+    
         </ul>
 </body>
 </html>
